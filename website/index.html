@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Berrak Nil Boya</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+
+        <header>
+            <nav role="navigation">
+                <ul>
+                    <li><a class="navlink" href="#about" title="About">ABOUT</a></li>
+                    <li><a class="navlink" href="#portfolio" title="Portfolio">PORTFOLIO</a></li>
+                    <li><a class="navlink" href="#audio" title="Audio">AUDIO</a></li>
+                    <li><a class="navlink" id='name' href="#home" title='Home'>HOME</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <main class="content">
+            <div id='home' class="box">
+                <h1>Hello!</h1>
+                <h2>I'm <strong>Berrak Nil,</strong><br />a front-end <strong>developer</strong> <br />and a multi-disciplinary <strong>artist</strong><br /> who <strong>loves</strong> to build things.</h2>
+            </div>
+
+            <div id='about' class="box">
+                <span id="info">
+       <p>I am a freelance front-end web developer and an audio all-arounder based in Istanbul. </p>
+<p>
+Web development is where my passion for technology and creativity meets. I believe in making the web an accessible place for everyone. My main aim is to create user-friendly and functional websites.</p>
+       <p>
+As a web developer I have experience with HTML5, CSS3, JavaScript. I also use libraries like jQuery and React where needed. You can check out my online resume for more specific information or download it from here.
+       </p>
+       <p>
+I started my professional career as a musician and a musicologist. Then found my way to coding via audio programming.  Which led me to web development when I discovered the Web Audio API! (Audio synthesis in the browser, how cool is that!!)
+       </p>
+       <p>
+As a musician I played classical music. Like a lot. I won't shut up about it. Which is also why I became a musicologist so it would give me a reason to talk about music at all times. Then I discovered that I needed to write A LOT to stay in the academia and I wasn't having any of that.
+       </p>
+       <p>
+As an audio professional I worked in the video games industry for three years. Created and implemented the sound design and music for indie games.  I used audio middleware such as Wwise, FMOD and also Unity's own audio engine. I also have experience with audio programming environments like Pure Data and Max/MSP.
+       </p>
+         </span>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/460540/profile_copy.jpg" alt="" />
+
+            </div>
+
+
+            <div id='portfolio' class="box">
+
+                <div id='photo-grid' class="grid">
+                    <a id="grid-one" class="hover" href="#nasa"></a>
+                    <a id="grid-two" class="hover" href="#weather"></a>
+                    <a id="grid-three" class="hover" href="#remarkable"></a>
+                    <a id="grid-four" class="hover" href="#wikipedia"></a>
+                    <a id="grid-five" class="hover" href="#pomodoro"></a>
+                    <a id="grid-six" class="hover" href="#didem"></a>
+                </div>
+
+
+                <div id='nasa' class="grid">
+                    <div class="preview">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/460540/nasa.png" alt="" />
+                    </div>
+
+                    <div class="spec">
+                        <p>I used NASA's "Astronomy Picture of the Day" API for this application. It relies on jQuery for the AJAX calls and for toggling the info and HD photo options, and the moment.js library for the date change functionality.
+                        </p>
+                        <br />
+                    </div>
+                    <span class="source">
+         <a href="https://berraknil.github.io/nasa-apod/" target="_blank">Demo<i class="fa fa-github fa-2x"></i></a>
+         <a href="https://github.com/berraknil/nasa-apod" target="_blank">Source<i class="fa fa-github fa-2x"></i></a>
+         </span>
+                </div>
+
+
+                <div id='weather' class="grid">
+                    <div class="preview">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/460540/weather.png" alt="" />
+                    </div>
+
+                    <div class="spec">
+                        <p>This application fetches forecast from the Weather Underground API and uses IP based geolocation. It displays a random photo in the background via the Unsplash API when the resolution is equal to a tablet or wider. A jQuery toggle
+                            is available to switch between Celsius and Fahrenheit.</p>
+                    </div>
+                    <span class="source">
+         <a href="https://codepen.io/berrak/full/54326c4b889b853402a56ae0531280bd/" target="_blank">Demo<i class="fa fa-codepen fa-2x"></i></a><a href="https://github.com/berraknil/weather-app" target="_blank">Source<i class="fa fa-github fa-2x"></i></a>
+         </span>
+                </div>
+
+
+
+
+
+
+                <div id='remarkable' class="grid">
+                    <div class="preview">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/460540/markdown.png" alt="" />
+                    </div>
+                    <div class="spec">
+                        <p>I built this markdown preview application using React and Remarkable libraries. It has a built in ES6 template literal to show a sample text written with markdown on first load. This application only supports desktop and tablet
+                            layouts for the time being.
+                        </p>
+                    </div>
+                    <span class="source">
+         <a href="https://berraknil.github.io/markdown-viewer/" target="_blank">Demo<i class="fa fa-github fa-2x"></i></a><a href="https://github.com/berraknil/markdown-viewer" target="_blank">Source<i class="fa fa-github fa-2x"></i></a>
+         </span>
+                </div>
+
+
+
+                <div id='wikipedia' class="grid">
+                    <div class="preview">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/460540/wikipedia.png" alt="" />
+                    </div>
+                    <div class="spec">
+                        <p>This Wikipedia search engine fetches results from the MediaWiki API by using the query entered on the search box. It uses jQuery for the AJAX calls and the search function.
+                        </p>
+                    </div>
+                    <span class="source">
+         <a href="https://berraknil.github.io/wikipedia-viewer/" target="_blank">Demo<i class="fa fa-github fa-2x"></i></a><a href="https://github.com/berraknil/wikipedia-viewer" target="_blank">Source<i class="fa fa-github fa-2x"></i></a>
+         </span>
+                </div>
+
+
+
+                <div id='pomodoro' class="grid">
+                    <div class="preview">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/460540/pomodoro.png" alt="" />
+                    </div>
+                    <div class="spec">
+                        <p>This is a Pomodoro timer that is built with pure JavaScript. It is possible to change the duration of the Pomodoro and break times or restart the timers.
+                        </p>
+                    </div>
+                    <span class="source">
+         <a href="https://berraknil.github.io/pomodoro-app/" target="_blank">Demo<i class="fa fa-github fa-2x"></i></a><a href="https://github.com/berraknil/pomodoro-app" target="_blank">Source<i class="fa fa-github fa-2x"></i></a>
+         </span>
+                </div>
+
+
+                <div id='didem' class="grid">
+                    <div class="preview">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/460540/weather.png" alt="" />
+                    </div>
+                    <div class="spec">
+                        <p>This is a personal artist website I designed and developed for Didem Atasoy.</p>
+                    </div>
+                    <span class="source">
+         <a href="">Demo<i class="fa fa-codepen fa-2x"></i></a><a href="">Source<i class="fa fa-github fa-2x"></i></a>
+         </span>
+                </div>
+
+            </div>
+
+
+            <div id='audio' class="box">
+                <h2>Demo Reels</h2>
+                <p>My game audio demo reels are available on my <a href="https://www.youtube.com/playlist?list=PLJB72Tqa5_DR3TUDQbmiRnV8MsGpZz5E0" target="_blank">YouTube</a> channel.</p>
+                <h2>Music</h2>
+                <p>You can listen to my music on <a href="https://www.soundcloud.com/berraknil" target="_blank">SoundCloud.</a></p>
+                <h2>Tutorial Videos</h2>
+                <p>I created a video tutorial series on how to integrate Audiokinetic's Wwise audio middleware into the Unity game engine and create an interactive soundscape.</p>
+                <p>You can watch the videos on <a href="https://www.youtube.com/playlist?list=PLJB72Tqa5_DRH_qBpmo0H52MsVGmaFfh4" target="_blank">YouTube</a></p>
+                <h2>Writings</h2>
+                <ul>
+                    <li><a href="https://designingsound.org/2014/08/critical-listening-a-game-audio-professionals-dilemma/" target="_blank">Critical Listening A Game Audio Professional's Dilemma</a></li>
+                    <li><a href="https://designingsound.org/2015/01/learning-audio-middleware-online-where-to-start/" target="_blank">Learning Audio Middleware Online, Where to Start?</a></li>
+                    <li><a href="https://www.happyvolcano.com/blog/2015/04/lava-fevers-dynamic-soundtrack/" target="_blank">Lava Fever's Dynamic Soundtrack</a></li>
+                    <li><a href="https://www.happyvolcano.com/blog/2015/05/lava-fevers-sound-effects-and-ambiance/" target="_blank">Lava Fever's Sound Effects and Ambience</a></li>
+                    <li><a href="https://designingsound.org/2015/05/review-generative-2-feedback-2/" target="_blank">Review of Feedback 2 and Generative 2</a></li>
+                </ul>
+
+            </div>
+        </main>
+
+
+
+
+
+        <footer id="contact">
+            <ul>
+                <li><a href="mailto:berraknil@gmail.com" target="_blank"><i class="fa fa-envelope fa-3x"></i></a></li>
+                <li><a href="https://github.com/berraknil" target="_blank"><i class="fa fa-github fa-3x"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/berrak-nil-boya-54a756125" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
+                <li> <a href="https://www.twitter.com/toggleModal" target="_blank"><i class="fa fa-twitter fa-3x"></i></a></li>
+                <li> <a href="https://www.youtube.com/channel/UCcmR8zmF-JVP2cSkuOPhmAw" target="_blank"><i class="fa fa-youtube fa-3x"></i></a></li>
+                <li> <a href="https://www.soundcloud.com/berraknil" target="_blank"><i class="fa fa-soundcloud fa-3x"></i></a></li>
+            </ul>
+        </footer>
+
+
+    </div>
+    <script src="https://use.fontawesome.com/00f6eec304.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" charset="utf-8"></script>
+    <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
