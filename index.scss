@@ -362,13 +362,14 @@ nav {
 
 #photo-grid {
   @include bp-tablet {
+    flex-flow: row wrap;
     height: 90vh;
     max-width: 100%;
     padding-top: 5rem;
     align-items: initial;
     justify-content: center;
   }
-  flex-flow: row wrap;
+  flex-direction: column;
   a {
     @include bp-tablet {
       flex-basis:49%;

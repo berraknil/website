@@ -226,9 +226,10 @@ nav {
     max-width: 100%; }
 
 #photo-grid {
-  flex-flow: row wrap; }
+  flex-direction: column; }
   @media screen and (min-width: 700px) {
     #photo-grid {
+      flex-flow: row wrap;
       height: 90vh;
       max-width: 100%;
       padding-top: 5rem;
