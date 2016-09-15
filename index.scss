@@ -372,6 +372,7 @@ nav {
   a {
     @include bp-tablet {
       flex-basis:49%;
+      min-height: 30vh;
     }
 
       background-size: cover;
